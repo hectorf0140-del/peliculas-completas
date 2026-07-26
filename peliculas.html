@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carrete — Películas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+  <div class="filmstrip" aria-hidden="true"></div>
+  <header class="topbar" id="site-header"></header>
+
+  <main class="wrap">
+    <div class="section-head">
+      <h2>Películas</h2>
+      <div class="filters">
+        <input class="search" type="text" id="searchInput" placeholder="Buscar película…">
+        <select id="genreSelect" class="genre-select"></select>
+      </div>
+    </div>
+    <div id="grid" class="grid" aria-live="polite"></div>
+    <p id="status" class="status"></p>
+  </main>
+
+  <div id="modals"></div>
+  <div class="filmstrip" aria-hidden="true"></div>
+  <footer class="footer" id="site-footer"></footer>
+
+<script src="config.js"></script>
+<script src="api.js"></script>
+<script src="components.js"></script>
+<script src="auth.js"></script>
+<script src="movies.js"></script>
+<script src="peliculas.js"></script>
+</body>
+</html>
