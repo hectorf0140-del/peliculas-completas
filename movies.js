@@ -24,13 +24,5 @@ function attachCardClicks(container, itemsMap, selector = ".card") {
 }
 
 function openMovieModal(item, type) {
-  const title = item.title || item.name;
-  requireLogin(() => {
-    document.getElementById("movieModalContent").innerHTML = `
-      <img class="modal-poster" src="${item.poster_path ? IMG_BASE + item.poster_path : ''}" alt="">
-      <h3>${escapeHtml(title)}</h3>
-      <p>${escapeHtml(item.overview || "Sin sinopsis disponible.")}</p>
-    `;
-    document.getElementById("movieModalOverlay").classList.remove("hidden");
-  });
+  requireLogin();
 }

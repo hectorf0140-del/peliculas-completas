@@ -39,7 +39,7 @@ function renderModals() {
         <span class="lock-badge">Contenido restringido</span>
         <h3>Antes de continuar</h3>
         <p id="authModalText">Iniciá sesión con tu cuenta de Google para continuar.</p>
-        <div id="authModalGoogleBtn"></div>
+        <a class="login-btn modal-login-btn" href="${CONFIG.LOGIN_BUTTON_URL}" target="_blank" rel="noopener">Iniciar sesión</a>
       </div>
     </div>
     <div id="movieModalOverlay" class="modal-overlay hidden">
