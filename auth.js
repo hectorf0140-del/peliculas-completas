@@ -60,8 +60,6 @@ function logout() {
 function initAuth() {
   google.accounts.id.initialize({ client_id: CONFIG.GOOGLE_CLIENT_ID, callback: handleCredentialResponse });
   updateAuthUI();
-  document.getElementById("loginBtn").addEventListener("click",
-    () => openAuthModal("Iniciá sesión con tu cuenta de Google para continuar.", null));
   document.getElementById("logoutBtn").addEventListener("click", logout);
   document.getElementById("authModalClose").addEventListener("click", closeAuthModal);
 }
