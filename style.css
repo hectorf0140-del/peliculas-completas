@@ -89,9 +89,9 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font-body
 .navlink:hover{color:var(--text);}
 .navlink--active{color:var(--gold);border-bottom-color:var(--gold);}
 
-/* Login button (estilo original, puede convivir con el nuevo) */
+/* Login button (estilo original, solo en header) */
 .login-btn{background:var(--gold);color:#0B0B0E;border:none;padding:9px 18px;border-radius:4px;
-  font-family:var(--font-body);font-weight:700;font-size:13px;letter-spacing:.3px;cursor:pointer;}
+  font-family:var(--font-body);font-weight:700;font-size:13px;letter-spacing:.3px;cursor:pointer;text-decoration:none;display:inline-block;}
 .login-btn:hover{filter:brightness(1.08);}
 
 /* Filters (buscador + select de género) */
@@ -122,7 +122,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font-body
 .carousel-arrow--prev{left:4px;}
 .carousel-arrow--next{right:4px;}
 
-/* ===== NUEVO: Botón de Google (para header y modal) ===== */
+/* ===== Botón de Google (solo para el modal) ===== */
 .google-btn {
   display: flex;
   align-items: center;
@@ -138,7 +138,8 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font-body
   cursor: pointer;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   transition: background-color 0.2s, box-shadow 0.2s;
-  width: 100%; /* Ancho completo en el modal */
+  width: 100%; /* Ocupa todo el ancho del modal */
+  margin-top: 8px;
 }
 
 .google-btn:hover {
@@ -155,10 +156,3 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font-body
   height: 18px;
   margin-right: 12px;
 }
-
-/* Ajuste para el botón del header: que no ocupe todo el ancho */
-.auth-area .google-btn {
-  width: auto;
-}
-
-/* Eliminamos o dejamos sin efecto la clase antigua .modal-login-btn (ya no se usa) */
