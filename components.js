@@ -15,7 +15,7 @@ function renderHeader(active) {
       <a href="index.html" class="logo">CARRETE</a>
       <nav class="nav">${navHtml}</nav>
       <div id="authArea" class="auth-area">
-        <a id="loginBtn" class="login-btn" href="${CONFIG.LOGIN_BUTTON_URL}" target="_blank" rel="noopener">Iniciar sesión con google</a>
+        <a id="loginBtn" class="login-btn" href="${CONFIG.LOGIN_BUTTON_URL}" target="_blank" rel="noopener">Iniciar sesión</a>
         <div id="userChip" class="user-chip hidden">
           <img id="userPic" alt="">
           <span id="userName"></span>
